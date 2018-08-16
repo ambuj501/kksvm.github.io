@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> image gallery design</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+<script  type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+<h1>Kamla Keshav Saraswati Vidya Mandir Majhwara Mayang Sultanpur</h1>
+
+<button   class="button"><span ><a style="color:white;" href="index.html">Home </a></span></button>
+<button  class="button"><span><a style="color:white;" href="about_us.html">About Us </span></button>
+<button  class="button"><span><a style="color:white;" href="academics.html">Academic </a></span></button>
+<button  class="button"><span><a style="color:white;" href="facilities.html">facilities</a></span></button>
+<button  class="button"><span><a style="color:white;" href="activities.html">activities</a></span></button>
+<button  class="button"><span><a style="color:white;" href="contact_us.html">Contact Us</a></span></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="gallery">
+<a href="images/m8.jpg"   data-lightbox="mygallery" data-title="Ambuj mishra " > <img style="width:250px;height:250px;" class="column" src="images/m1.jpg"></a>
+<a href="images/m9.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m2.jpg"></a>
+<a href="images/m10.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m3.jpg"></a>
+<a href="images/m11.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m5.jpg"></a>
+<a href="images/m12.jpg" data-lightbox="mygallery"><img  class="column" style="width:250px;height:250px;" src="images/m6.jpg"></a>
+<a href="images/m13.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m7.jpg"></a>
+<a href="images/m14.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m17.jpg"></a>
+<a href="images/m15.jpg" data-lightbox="mygallery" ><img class="column" style="width:250px;height:250px;" src="images/m16.jpg"></a>
+
+</div>
+</body>
+
+</html>
